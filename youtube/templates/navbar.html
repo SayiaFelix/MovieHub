@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-lg navbar-dark shadow-lg p-2 mb-3 bg-dark rounded">
+    <div class="container-fluid">
+      <a class="navbar-brand fs-2" href="{% url 'homepage' %}">SiR LoRa MovieHub</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="{% url 'homepage' %}">Movies</a>
+                </li>   
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="/admin">Admin</a>
+                </li>      
+            </ul> 
+             <!-- Search Form -->
+             <div class="col-sm-4 col-md-4 navbar-right">
+                <form action="" class="navbar-form" role="search">
+                    {% csrf_token %}
+                    <div class="input-group">
+                        <input type="text" class="form-control text-light bg-dark" placeholder="Search Movie" name="image">
+                        <div class="input-group-btn">
+                            <button class="btn btn-outline-transparent text-primary" type="submit">Search
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+             </div> 
+       </div>
+    </div>
+  </nav> 
