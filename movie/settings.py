@@ -20,6 +20,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'users',
     'youtube',
     'bootstrap4',
     'django.contrib.admin',
