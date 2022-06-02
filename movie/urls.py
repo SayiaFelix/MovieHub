@@ -6,6 +6,6 @@ urlpatterns = [
     path(r'', include('youtube.urls')),
 ]
 
-admin.site.site_header= "Sir LoRa Administration"
+admin.site.site_header= "Sir LoRa Movie Administration"
 admin.site.site_title="SiR LoRa"
-admin.site.index_title="Welcome to Sir LoRa administration"
+admin.site.index_title="Welcome to Sir LoRa Movie administration"
